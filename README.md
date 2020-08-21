@@ -20,7 +20,7 @@ bison -d P7.y <br/>
 flex P7.l <br/>
 gcc -o P7 P7.tab.c lex.yy.c P7.c </br>
 
-<b>How to Run? </b>
+<b>How to Run? </b> </br>
 ./P7 sample.html output.tex
 <br/>
 (or)
