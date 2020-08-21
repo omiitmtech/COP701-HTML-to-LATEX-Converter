@@ -1,0 +1,13 @@
+In the lex file named as P7.l, regular expressions and token defitions are mentioned which are checked from the source file. In the yacc file which is named as P7.y,grammar, types of tokens, types of terminals, and nonterminals are mentioned. In the yacc file semantic rules are also written to construct the AST and store the respective values in the leaf nodes.
+
+HTML document is provided as in input to the lex, it scans the source code and when a text from the source file matches with the definition of a token which is mentioned in the P7.l file, it returns a token to the yacc parser.
+Parser look into the grammar written in P7.y file and check if it's a part of the vailid grammar if not, it throws a syntax error.
+
+During AST construction, the respective mappings of Latex are stored in the Leaf nodes based on the mentioned grammar.
+It constructs a binary tree which is evaluated later to convert HTML into Latex. AST contains two types of nodes, the nodes with node type as 'K' are leaf nodes and the nodes with nodetype as 'T' are internal nodes. The Tree is traversed in bottom up manner, it takes the value from a node and frees it.
+
+I used C programming language as gcc compiler. 
+
+I covered more number of greek letters in my code and all type of text styles like bold, small, em, etc can be used any where in the code.
+
+
